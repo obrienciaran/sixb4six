@@ -1,7 +1,7 @@
 import bs4, requests as requests, smtplib
 import re
 
-# convert extract h2 tag to string
+# convert extract h3 tag to string
 def bs4ToText(bs4):
     text = []
     for x in bs4:
