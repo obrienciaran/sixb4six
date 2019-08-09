@@ -31,7 +31,6 @@ def fetch_special():
             time.sleep(5)
             print("Was a nice sleep, now let me continue...")
             continue
-
     '''
     
     #To validate if all the download happened without any issues, the raise_for_status() function can be used:
@@ -40,7 +39,6 @@ def fetch_special():
     # parses and returns just the text    
     text = bs4.BeautifulSoup(getPage.text, 'html.parser')
     
-
     ### Updated HTML Parsing Code ###
     # I only edited this code because the format of the target page seems to have changed during the gig.
     text = text.find('h3').findParent()
