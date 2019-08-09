@@ -49,21 +49,6 @@ def fetch_special():
     text = text.lower()
     return cleanhtml(text)
 
-    ### Original HTML Parsing Code ###
-    # pulls out h2 headings, where the name of the 6b46 is listed 
-    #div_contents = text.find('h2').findParent()
-    
-    # Convert bs4 element tag to text in preparation for cleaning
-    #div_contents_text = bs4ToText(div_contents)
-    
-    # get 6b46
-    #sixBeforeSix = div_contents_text[3]
-    #sixBeforeSix = sixBeforeSix.lower()
-    
-    # remove html tags from 64b6 string
-    #return cleanhtml(sixBeforeSix)
-
-
 # I put connection info into a separate function for the following reasons:
 # 1. If we ever need multiple twlilio connections, it makes it easy to keep track of the different sets of similiar information because each info set is contained in a dictionary
 # 2. The TWILIO_MESSAGE_ENDPOINT is actually dependent on the TWILIO_SID, so we want to ensure those declarations are never separated.
