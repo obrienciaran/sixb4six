@@ -40,7 +40,6 @@ def fetch_special():
     text = bs4.BeautifulSoup(getPage.text, 'html.parser')
     
     ### Updated HTML Parsing Code ###
-    # I only edited this code because the format of the target page seems to have changed during the gig.
     text = text.find('h3').findParent()
     text = bs4ToText(text)
     text = text[11]
